@@ -1,16 +1,247 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "footerdocs/impressum.html",
+    "href": "footerdocs/impressum.html",
+    "title": "Impressum",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Es handelt sich weder um eine Zeitung, noch um eine Zeitschrift, gemäss Art. 322 StGB.\nAuf ein formelles Impressum wird verzichtet.\nAlle Inhalte dieser Webseite, ausser sie werden explizit anders ausgewiesen, stehen unter folgender Lizenz:\nUniversity of Teacher Education Bern, CC BY-SA 4.0\nFolgende Autoren verzichten auf Namensnennung bei Wiederverwendung:\n\nRichard François Conrardy\n\n\n\n\nWiederverwendunghttps://creativecommons.org/licenses/by-sa/4.0/deed.de"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#section",
+    "href": "special/barcamp_phbern_2024.html#section",
+    "title": "Inhalte onlinebringen",
+    "section": "",
+    "text": "a fool with a tool is still a fool\n\nGrady Booch?\n\n\n\n\nlet’s fool around\n\nGeneral Johnson"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#rstudio",
+    "href": "special/barcamp_phbern_2024.html#rstudio",
+    "title": "Inhalte onlinebringen",
+    "section": "RStudio",
+    "text": "RStudio\n\n\nHomebrew:\nbrew install --cask r\nbrew install --cask rstudio\n\nOld fashioned:\nhttps://posit.co/download/rstudio-desktop/"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#quartopub",
+    "href": "special/barcamp_phbern_2024.html#quartopub",
+    "title": "Inhalte onlinebringen",
+    "section": "Quartopub",
+    "text": "Quartopub\nhttps://quartopub.org/"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#workshop",
+    "href": "special/barcamp_phbern_2024.html#workshop",
+    "title": "Inhalte onlinebringen",
+    "section": "Workshop",
+    "text": "Workshop\n\n\nQuellcode für den Countdown\nlibrary (countdown)\ncountdown(\n  right = 0,\n  top = 0,\n  font_size = \"1.5em\",\n  margin = \"0%\",\n  minutes = 20, \n  seconds = 0\n)\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#creative-coding---sonja-schär",
+    "href": "special/barcamp_phbern_2024.html#creative-coding---sonja-schär",
+    "title": "Inhalte onlinebringen",
+    "section": "Creative Coding - Sonja Schär",
+    "text": "Creative Coding - Sonja Schär\n\n\n\nCode\nP5 = require(\"p5\")\n\nfunction* createSketch(sketch) {\n  const element = DOM.element('div');\n  yield element;\n  const instance = new P5(sketch, element, true);\n  try {\n    while (true) {\n      yield element;\n    }\n  } finally {\n    instance.remove();\n  }\n}\n\ncreateSketch((s) =&gt; {\n    s.setup = () =&gt; {\n    s.sizeX = 960;\n    s.sizeY = 400;\n    s.createCanvas(s.sizeX, s.sizeY);\n    s.background(0);\n  };\n\n  s.draw = () =&gt; {\n    meinKreisePinsel();\n  };\n\n  function meinKreisePinsel() {\n    s.strokeWeight(1);\n    s.fill(255 / s.sizeX * s.mouseX, 0, 255 / s.sizeY * (s.sizeY - s.mouseX));\n    s.circle(s.mouseX, s.mouseY, s.dist(s.mouseX, s.mouseY, s.pmouseX, s.pmouseY));\n  }\n})"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#mermaid-js---richard-conrardy",
+    "href": "special/barcamp_phbern_2024.html#mermaid-js---richard-conrardy",
+    "title": "Inhalte onlinebringen",
+    "section": "Mermaid JS - Richard Conrardy",
+    "text": "Mermaid JS - Richard Conrardy\n\n\nCode\ngraph LR;\n  b1[Arithmetik];\n  b2[Stochastik];\n  b3[Geometrie];\n  i5[Zahl];\n  k1[Zahl und Variable];\n  b4[Algebra];\n  i1[Symbol und Formalisierung];\n  b5[Analysis];\n  i2[Zuordnung und Veränderung];\n  i3[Daten und Zufall];\n  i4[Form und Raum];\n  k2[Grössen, Funktionen, Daten und Zufall];\n  k3[Form und Raum];\n  edk1[Zahl und Variable];\n  edk2[Form und Raum];\n  edk3[Grösse und Masse];\n  edk4[Funktionale Zusammenhänge];\n  edk5[Daten und Zufall];\n  b1--&gt;i5---edk1--&gt;k1;\n  b4--&gt;i1---edk1;\n  b5--&gt;i2---edk4--&gt;k2;\n  b2--&gt;i3---edk5--&gt;k2;\n  b3--&gt;i4---edk2--&gt;k3;\n  edk3--&gt;k2;\n  subgraph Teilgebiete\n    b1;\n    b2;\n    b3;\n    b4;\n    b5;\n  end\n  subgraph B[Kompetenzbereiche EDK]\n    edk1;\n    edk2;\n    edk3;\n    edk4;\n    edk5;\n  end\n  subgraph Leitideen\n    i1;\n    i2;\n    i3;\n    i4;\n    i5;\n  end\n  subgraph K[Kompetenzbereiche LP21]\n    k1;\n    k2;\n    k3;\n  end\n  \nclassDef title font-size:14px\nclassDef padding stroke:none,fill:none\n\nclass main title\nclass padding padding\n\n\n\n\ngraph LR;\n  b1[Arithmetik];\n  b2[Stochastik];\n  b3[Geometrie];\n  i5[Zahl];\n  k1[Zahl und Variable];\n  b4[Algebra];\n  i1[Symbol und Formalisierung];\n  b5[Analysis];\n  i2[Zuordnung und Veränderung];\n  i3[Daten und Zufall];\n  i4[Form und Raum];\n  k2[Grössen, Funktionen, Daten und Zufall];\n  k3[Form und Raum];\n  edk1[Zahl und Variable];\n  edk2[Form und Raum];\n  edk3[Grösse und Masse];\n  edk4[Funktionale Zusammenhänge];\n  edk5[Daten und Zufall];\n  b1--&gt;i5---edk1--&gt;k1;\n  b4--&gt;i1---edk1;\n  b5--&gt;i2---edk4--&gt;k2;\n  b2--&gt;i3---edk5--&gt;k2;\n  b3--&gt;i4---edk2--&gt;k3;\n  edk3--&gt;k2;\n  subgraph Teilgebiete\n    b1;\n    b2;\n    b3;\n    b4;\n    b5;\n  end\n  subgraph B[Kompetenzbereiche EDK]\n    edk1;\n    edk2;\n    edk3;\n    edk4;\n    edk5;\n  end\n  subgraph Leitideen\n    i1;\n    i2;\n    i3;\n    i4;\n    i5;\n  end\n  subgraph K[Kompetenzbereiche LP21]\n    k1;\n    k2;\n    k3;\n  end\n  \nclassDef title font-size:14px\nclassDef padding stroke:none,fill:none\n\nclass main title\nclass padding padding"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#markup",
+    "href": "special/barcamp_phbern_2024.html#markup",
+    "title": "Inhalte onlinebringen",
+    "section": "Mark️up",
+    "text": "Mark️up"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#section-2",
+    "href": "special/barcamp_phbern_2024.html#section-2",
+    "title": "Inhalte onlinebringen",
+    "section": "🧠 + 🤖 = 🦾",
+    "text": "🧠 + 🤖 = 🦾\n\nHello, Rainbow Text!\n\n\n\nThis text will sparkle!\n\n\n\n\n\nThis text will jiggle!\n\n\n\n\n\nWordArt is back!"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#about",
+    "href": "special/barcamp_phbern_2024.html#about",
+    "title": "Inhalte onlinebringen",
+    "section": "About",
+    "text": "About\n\nPosit\n\nQuarto\nRStudio\nQuartopub"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#datenschutzrecht",
+    "href": "special/barcamp_phbern_2024.html#datenschutzrecht",
+    "title": "Inhalte onlinebringen",
+    "section": "Datenschutzrecht",
+    "text": "Datenschutzrecht\n\nDieses Gesetz gilt für jedes Bearbeiten von Personendaten durch Behörden.\n\nArt. 4 Abs.1 KDSG\n\n\n\nPersonendaten sind Angaben über eine bestimmte oder bestimmbare natürliche oder juristische Person.\n\nArt.2 Abs.1 KDSG"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#urheberrecht",
+    "href": "special/barcamp_phbern_2024.html#urheberrecht",
+    "title": "Inhalte onlinebringen",
+    "section": "Urheberrecht",
+    "text": "Urheberrecht\n\nDer Arbeitnehmer ist für den Schaden verantwortlich, den er absichtlich oder fahrlässig dem Arbeitgeber zufügt.\n\nArt.321e Abs.1 OR\n\n\n\nDas Zitat muss der Erläuterung, der Veranschaulichung oder als Hinweis dienen und darf nicht länger als nötig sein. Zudem müssen Sie das Zitat als solches bezeichnen und die Quelle angeben. Nennt die Quelle den Urheber, müssen Sie auch diesen erwähnen.\n\nEidgenössisches Institut für Geistiges Eigentum (o. J.)"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#phbern",
+    "href": "special/barcamp_phbern_2024.html#phbern",
+    "title": "Inhalte onlinebringen",
+    "section": "PHBern",
+    "text": "PHBern\n\nAn der PHBern entscheiden gemäss Art. 8 Abs. 1 Bst. o des PH-Statuts (PHSt; abrufbar unter www.phbern.ch/rechtssammlung &gt; Ziff. 1.0) grundsätzlich die Institutsleiterinnen und Institutsleiter über die Nutzung immaterieller Arbeitsergebnisse […]\n\nGeistiges Eigentum Merkblatt"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#bibliographie",
+    "href": "special/barcamp_phbern_2024.html#bibliographie",
+    "title": "Inhalte onlinebringen",
+    "section": "Bibliographie",
+    "text": "Bibliographie\n\n\n\nPHBern, Institut Sekundarstufe 1, Richard Conrardy, Dozent\n\n\n\nEidgenössisches Institut für Geistiges Eigentum. o. J. „Zitieren aus Werken - Eidgenössisches Institut für Geistiges Eigentum“. https://www.ige.ch/de/etwas-schuetzen/urheberrecht/ein-werk-nutzen/erlaubte-nutzungen/zitieren-aus-werken."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "singles",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Sortieren nach\n       Voreinstellung\n         \n          Titel\n        \n         \n          Autor:in\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitel\n\n\nUntertitel\n\n\nAutor:in\n\n\n\n\n\n\nHow to flip the right way? Fail, flip, fix and feed in practice.\n\n\nLiterature Club Besprechung\n\n\nRichard Conrardy\n\n\n\n\nInhalte onlinebringen\n\n\nBarcamp PHBern\n\n\nRichard Conrardy\n\n\n\n\nMathematikverständnis stärken in Zeiten von KI\n\n\nWorkshop\n\n\nRichard Conrardy\n\n\n\n\nSpielwiese\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\n\n\nKeine Treffer\n\nWiederverwendunghttps://creativecommons.org/licenses/by-sa/4.0/deed.de"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#was-wir-heute-erreichen-möchten",
+    "href": "special/gdm_tagung.html#was-wir-heute-erreichen-möchten",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Was wir heute erreichen möchten:",
+    "text": "Was wir heute erreichen möchten:\n\nshow and tell\nIdeen für die LP-Ausbildung\nIdeen und Wünsche für Unterrichtsmaterial\neinen angenehmen Austausch"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#sneak-peak",
+    "href": "special/gdm_tagung.html#sneak-peak",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Sneak Peak",
+    "text": "Sneak Peak\nimport random\nimport time\n\nanzahlRichtige = 0\nwhile anzahlRichtige &lt; 10:\n    startzeit = time.time ()\n\n    x = int (50000 * random.random())\n    y = int (50000 * random.random())\n    \n    z = x+y     # korrekte Lösung = z\n\n    Lösung = input(\"Was ergibt \" +  str (x) + \" + \" + str(y) + \"? \")\n    endzeit = time.time()\n    anzahl_sekunden = int (endzeit - startzeit)\n    if int(Lösung) &lt; z*1.03 and int (Lösung) &gt; z*0.97:\n        anzahlRichtige = anzahlRichtige + 2\n        print(\"sehr gut gemacht!\" + \"Du hast \" + str (anzahl_sekunden) + \" Sekunden gebraucht.\")\n\n    elif int(Lösung) &lt; z*1.06 and int (Lösung) &gt; z*0.94:\n        anzahlRichtige = anzahlRichtige + 1\n        print(\"gut gemacht!\" + \"Du hast \" + str (anzahl_sekunden) + \" Sekunden gebraucht.\")\n\n    else:\n        print(\"Zu ungenau, dass wäre die korrekte Lösung: \" + str (z) + \" , du hast \" + str(anzahl_sekunden) + \" Sekunden gebraucht.\")\n\n\nprint (anzahlRichtige)"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#lehrplan-21-mi",
+    "href": "special/gdm_tagung.html#lehrplan-21-mi",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Lehrplan 21 M&I",
+    "text": "Lehrplan 21 M&I\n\nMI.2.2.f\nkönnen Programme mit Schleifen, bedingten Anweisungen und Parametern schreiben und testen.\n\n\n\nMI.2.2.h\nkönnen selbstentwickelte Algorithmen in Form von lauffähigen und korrekten Computerprogrammen mit Variablen und Unterprogrammen formulieren."
+  },
+  {
+    "objectID": "special/gdm_tagung.html#lehrplan-21-mi-1",
+    "href": "special/gdm_tagung.html#lehrplan-21-mi-1",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Lehrplan 21 M&I",
+    "text": "Lehrplan 21 M&I\n\n\nGrundansprüche müssen erfüllt sein, damit die Basis für das Weiterlernen im Fachbereich gelegt ist.\n\n\nErziehungsdirektion des Kantons Bern (2016)"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#unterstützung-durch-mathematik",
+    "href": "special/gdm_tagung.html#unterstützung-durch-mathematik",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Unterstützung durch Mathematik",
+    "text": "Unterstützung durch Mathematik\n\n\n\n\nKlasse\nLektionen1\n\n\n\n\n7. Klasse\n5\n\n\n8. Klasse\n5\n\n\n9. Klasse\n4\n\n\n\nLektionen für M&I nach Regez und Lutz (2022)"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#der-elephant-im-raum",
+    "href": "special/gdm_tagung.html#der-elephant-im-raum",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Der Elephant im Raum 🐘",
+    "text": "Der Elephant im Raum 🐘\n\n\n\n\n\nRegistration and Access Minimum Age. You must be at least 13 years old or the minimum age required in your country to consent to use the Services. If you are under 18 you must have your parent or legal guardian’s permission to use the Services.\n\n\nOpenAI (2024)"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#tools",
+    "href": "special/gdm_tagung.html#tools",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Tools",
+    "text": "Tools\nWir benutzen heute folgende Webseiten:\n\nhttps://www.online-python.com/\nhttps://chat.openai.com/ (benötigt Account)\n\n(Hinweis: Im Kurs werden Rstudio oder VSCode benutzt)"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#selbst-ausprobieren",
+    "href": "special/gdm_tagung.html#selbst-ausprobieren",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Selbst ausprobieren",
+    "text": "Selbst ausprobieren\n\nPrimzahlen finden mit Sieb des Erathostenes\nPrimzahlzerlegung\nGgt, kgV\nBrüche addieren\n…\n\nProbiert eigene Ideen aus.\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#was-denken-andere",
+    "href": "special/gdm_tagung.html#was-denken-andere",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Was denken andere?",
+    "text": "Was denken andere?\n\n\nIch empfand Mathematik als anstrengend, weil sie einen ungeheuer kreativen Umgang mit lose definierten formalen Systemen erfordert, während einem die Informatik Kreativität mit streng definierten formalen Systemen abverlangt.\n\nGeoff Huston, in Ermert (2023)"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#interessante-diskussionen",
+    "href": "special/gdm_tagung.html#interessante-diskussionen",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Interessante Diskussionen",
+    "text": "Interessante Diskussionen\n\nWie unterscheidet sich der Begriff “Funktion” und “Variable” in Mathematik und Informatik?\nWas ist besser:\n\nDifferenz als Summe mit negativen Zahlen?\nDifferenz als Umkehroperation der Addition?"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#weitere-ideen-sammeln",
+    "href": "special/gdm_tagung.html#weitere-ideen-sammeln",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Weitere Ideen sammeln",
+    "text": "Weitere Ideen sammeln\nhttps://phbern.padlet.org/richardconrardy/workshop-gdm-f7fukgt5ggad1j13"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#aufgaben-erstellen",
+    "href": "special/gdm_tagung.html#aufgaben-erstellen",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Aufgaben erstellen?",
+    "text": "Aufgaben erstellen?\nEs folgt ein Python-Programm, welches mit Ihnen das Überschlagen von Summen und Differenzen von Dezimalzahlen übt.\nEine “sehr gute” Lösung liegt +/- 3% von der richtigen Lösung weg, eine “gute” Lösung liegt +/- 6% von der richtigen Lösung weg.\nÜben Sie, bis Sie regelmässig gute Lösungen erreichen.\nHerausforderung: Schreiben Sie das Programm selbst! Benutzen Sie dazu die random library mit import random und generieren Sie eine zufällige Zahl zwischen 0 und 1 mit random.random() und mit random.choice(+,-) eine zufällige Operation.\nHerausforderung: Bauen Sie eine Stoppuhr in den Code ein, welche die Zeit bis zur Antwort zählt und ausgibt. (Tipp: import time und time.time() gibt die Zeit in Unixzeit aus.)"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#code-von-studentin",
+    "href": "special/gdm_tagung.html#code-von-studentin",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Code von Studentin",
+    "text": "Code von Studentin\nimport random\nimport time\n\nanzahlRichtige = 0\nwhile anzahlRichtige &lt; 10:\n    startzeit = time.time ()\n\n    x = int (50000 * random.random())\n    y = int (50000 * random.random())\n    \n    z = x+y     # korrekte Lösung = z\n\n    Lösung = input(\"Was ergibt \" +  str (x) + \" + \" + str(y) + \"? \")\n    endzeit = time.time()\n    anzahl_sekunden = int (endzeit - startzeit)\n    if int(Lösung) &lt; z*1.03 and int (Lösung) &gt; z*0.97:\n        anzahlRichtige = anzahlRichtige + 2\n        print(\"sehr gut gemacht!\" + \"Du hast \" + str (anzahl_sekunden) + \" Sekunden gebraucht.\")\n\n    elif int(Lösung) &lt; z*1.06 and int (Lösung) &gt; z*0.94:\n        anzahlRichtige = anzahlRichtige + 1\n        print(\"gut gemacht!\" + \"Du hast \" + str (anzahl_sekunden) + \" Sekunden gebraucht.\")\n\n    else:\n        print(\"Zu ungenau, dass wäre die korrekte Lösung: \" + str (z) + \" , du hast \" + str(anzahl_sekunden) + \" Sekunden gebraucht.\")\n\n\nprint (anzahlRichtige)"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#wie-weiter",
+    "href": "special/gdm_tagung.html#wie-weiter",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Wie weiter?",
+    "text": "Wie weiter?"
+  },
+  {
+    "objectID": "special/gdm_tagung.html#bibliographie",
+    "href": "special/gdm_tagung.html#bibliographie",
+    "title": "Mathematikverständnis stärken in Zeiten von KI",
+    "section": "Bibliographie",
+    "text": "Bibliographie\n\n\n\nPHBern, Institut Sekundarstufe 1, Joel Adler, Richard Conrardy\n\n\n\nErmert, Geoff. 2023. „Missing Link: Von der Logik des Überflusses und einer gekauften Zukunft“. https://www.heise.de/hintergrund/Missing-Link-Von-der-Logik-des-Ueberflusses-und-einer-gekauften-Zukunft-9330937.html.\n\n\nErziehungsdirektion des Kantons Bern. 2016. „Lehrplan 21 - 5. Unterrichtsentwicklung“. https://be.lehrplan.ch/index.php?code=e|92|5&hilit=102m3PnWU64AWEZDAmcmgPHUF895BF#102m3PnWU64AWEZDAmcmgPHUF895BF.\n\n\nOpenAI. 2024. „Terms of Use“. https://openai.com/policies/terms-of-use.\n\n\nRegez, Adrian, und Elia Lutz. 2022. „Medien Informatik Factsheet“. https://www.faechernet.bkd.be.ch/content/dam/faechernet_bkd/dokumente-bilder/de/startseite/uebergeordnete-themen/medien-und-informatik/unterricht/medien-informatik-factsheet.pdf."
+  },
+  {
+    "objectID": "special/excl_Spielwiese.html",
+    "href": "special/excl_Spielwiese.html",
+    "title": "Spielwiese",
+    "section": "",
+    "text": "Hier sind tolle Sachen, aber aufwändiger für Ungeübte Nutzer:"
+  },
+  {
+    "objectID": "special/excl_Spielwiese.html#test-accordion",
+    "href": "special/excl_Spielwiese.html#test-accordion",
+    "title": "Spielwiese",
+    "section": "Test Accordion",
+    "text": "Test Accordion\n\n\n\n\nAccordion Item #1\n\n\n\n\ntext1\n\n\n\n\n\n\ntext2\n\n\n\n\n\n\n\n\n\n\n\nAccordion Item #3\n\n\n\n\ntext"
+  },
+  {
+    "objectID": "special/excl_Spielwiese.html#test---lp21-indikatoren",
+    "href": "special/excl_Spielwiese.html#test---lp21-indikatoren",
+    "title": "Spielwiese",
+    "section": "Test - LP21 Indikatoren",
+    "text": "Test - LP21 Indikatoren\nMI.2.2.g\nMI.2.2.g"
+  },
+  {
+    "objectID": "special/excl_Spielwiese.html#test-dataframes",
+    "href": "special/excl_Spielwiese.html#test-dataframes",
+    "title": "Spielwiese",
+    "section": "Test Dataframes",
+    "text": "Test Dataframes"
+  },
+  {
+    "objectID": "footerdocs/disclaimer.html",
+    "href": "footerdocs/disclaimer.html",
+    "title": "Disclaimer",
+    "section": "",
+    "text": "Es handelt sich um statische Dateien. Personenbezogene Daten werden nicht gespeichert.\n\n\n\nWiederverwendunghttps://creativecommons.org/licenses/by-sa/4.0/deed.de"
   }
 ]

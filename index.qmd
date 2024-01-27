@@ -1,11 +1,14 @@
 ---
 title: "singles"
+format: html
+
+listing:
+  categories: true
+  type: table
+  contents: 
+    - "special/*"
+  fields: [title, subtitle, author]
+  filter-ui: [title, subtitle, author]
+
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
