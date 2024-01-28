@@ -100,9 +100,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "singles",
+    "title": "Weiteres",
     "section": "",
-    "text": "Sortieren nach\n       Voreinstellung\n         \n          Titel\n        \n         \n          Autor:in\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitel\n\n\nUntertitel\n\n\nAutor:in\n\n\n\n\n\n\nHow to flip the right way? Fail, flip, fix and feed in practice.\n\n\nLiterature Club Besprechung\n\n\nRichard Conrardy\n\n\n\n\nInhalte onlinebringen\n\n\nBarcamp PHBern\n\n\nRichard Conrardy\n\n\n\n\nMathematikverständnis stärken in Zeiten von KI\n\n\nWorkshop\n\n\nRichard Conrardy\n\n\n\n\nSpielwiese\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\n\n\nKeine Treffer\n\nWiederverwendunghttps://creativecommons.org/licenses/by-sa/4.0/deed.de"
+    "text": "Sortieren nach\n       Voreinstellung\n         \n          Titel\n        \n         \n          Autor:in\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitel\n\n\nUntertitel\n\n\nAutor:in\n\n\n\n\n\n\nHow to flip the right way? Fail, flip, fix and feed in practice.\n\n\nLiterature Club Besprechung\n\n\nRichard Conrardy\n\n\n\n\nInhalte onlinebringen\n\n\nBarcamp PHBern\n\n\nRichard Conrardy\n\n\n\n\nMathematikverständnis stärken in Zeiten von KI\n\n\nWorkshop\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\nundefined\n\n\nundefined\n\n\nRichard Conrardy\n\n\n\n\n\n\nKeine Treffer\n\nWiederverwendunghttps://creativecommons.org/licenses/by-sa/4.0/deed.de"
   },
   {
     "objectID": "special/gdm_tagung.html#was-wir-heute-erreichen-möchten",
@@ -243,5 +243,33 @@
     "title": "Disclaimer",
     "section": "",
     "text": "Es handelt sich um statische Dateien. Personenbezogene Daten werden nicht gespeichert.\n\n\n\nWiederverwendunghttps://creativecommons.org/licenses/by-sa/4.0/deed.de"
+  },
+  {
+    "objectID": "excl_Spielwiese.html",
+    "href": "excl_Spielwiese.html",
+    "title": "Spielwiese",
+    "section": "",
+    "text": "Hier sind tolle Sachen, aber aufwändiger für Ungeübte Nutzer:"
+  },
+  {
+    "objectID": "excl_Spielwiese.html#test-accordion",
+    "href": "excl_Spielwiese.html#test-accordion",
+    "title": "Spielwiese",
+    "section": "Test Accordion",
+    "text": "Test Accordion\n\n\n\n\nAccordion Item #1\n\n\n\n\ntext1\n\n\n\n\n\n\ntext2\n\n\n\n\n\n\n\n\n\n\n\nAccordion Item #3\n\n\n\n\ntext"
+  },
+  {
+    "objectID": "excl_Spielwiese.html#test---lp21-indikatoren",
+    "href": "excl_Spielwiese.html#test---lp21-indikatoren",
+    "title": "Spielwiese",
+    "section": "Test - LP21 Indikatoren",
+    "text": "Test - LP21 Indikatoren\nMI.2.2.g\nMI.2.2.g"
+  },
+  {
+    "objectID": "excl_Spielwiese.html#test-dataframes",
+    "href": "excl_Spielwiese.html#test-dataframes",
+    "title": "Spielwiese",
+    "section": "Test Dataframes",
+    "text": "Test Dataframes"
   }
 ]

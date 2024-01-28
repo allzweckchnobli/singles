@@ -1,5 +1,5 @@
 ---
-title: "singles"
+title: "Weiteres"
 format: html
 
 listing:

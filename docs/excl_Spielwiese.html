@@ -8,7 +8,7 @@
 
 <meta name="author" content="Richard Conrardy">
 
-<title>Weiteres</title>
+<title>Spielwiese</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./images/cat.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -63,38 +61,17 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Suchen"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.31/datatables.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
 
-    const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-title","listing-subtitle","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -119,8 +96,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Weiteres</h1>
-                      </div>
+      <h1 class="title">Spielwiese</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">unlisted</div>
+              </div>
+                  </div>
   </div>
     
   <div class="quarto-title-meta-author">
@@ -151,149 +131,86 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Kategorien</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">alle <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Tagungsfolien">Tagungsfolien <span class="quarto-category-count">(1)</span></div><div class="category" data-category="unlisted">unlisted <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul class="collapse">
+  <li><a href="#test-accordion" id="toc-test-accordion" class="nav-link active" data-scroll-target="#test-accordion">Test Accordion</a></li>
+  <li><a href="#test---lp21-indikatoren" id="toc-test---lp21-indikatoren" class="nav-link" data-scroll-target="#test---lp21-indikatoren">Test - LP21 Indikatoren</a></li>
+  <li><a href="#test-dataframes" id="toc-test-dataframes" class="nav-link" data-scroll-target="#test-dataframes">Test Dataframes</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
+<p>Hier sind tolle Sachen, aber aufwändiger für Ungeübte Nutzer:</p>
+<div class="alert alert-dismissible alert-warning">
+<p>Note that there are five types of callouts, including: <code>note</code>, <code>warning</code>, <code>important</code>, <code>tip</code>, and <code>caution</code>.</p>
+</div>
+<section id="test-accordion" class="level2">
+<h2 class="anchored" data-anchor-id="test-accordion">Test Accordion</h2>
+<div id="accordionFlushExample" class="accordion accordion-flush">
+<div class="accordion-item">
+<div id="flush-headingOne" class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+<p>Accordion Item #1</p>
+</button>
+</div>
+<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+<div class="accordion-body">
+<p>text1</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div id="flush-headingTwo" class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+<p>text2</p>
+</button>
+</div>
+<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+<div class="accordion-body">
 
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div id="flush-headingThree" class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+<p>Accordion Item #3</p>
+</button>
+</div>
+<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+<div class="accordion-body">
+<p>text</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="test---lp21-indikatoren" class="level2">
+<h2 class="anchored" data-anchor-id="test---lp21-indikatoren">Test - LP21 Indikatoren</h2>
+<p><a href="https://www.youtube.com/watch?v=No_uEZAlpTU" class="knopf indikator" target="_blank">MI.2.2.g</a></p>
+<p><a href="https://phbern365.sharepoint.com/:x:/s/IS1_Z_FachteamMathematik/ETSa_gnhzWZHusM0ySUYd2ABJGNu7A09l-P-rqaODcyrsA?e=C7An4E" class="knopf indikator zyklus2" target="_blank">MI.2.2.g</a></p>
+</section>
+<section id="test-dataframes" class="level2">
+<h2 class="anchored" data-anchor-id="test-dataframes">Test Dataframes</h2>
+<div class="cell">
+<div class="cell-output-display">
 
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Sortieren nach" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Sortieren nach</option>
-       <option value="index" data-direction="asc">Voreinstellung</option>
-         <option value="listing-title-sort" data-direction="asc">
-          Titel
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Autor:in
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-cd34b0af0bfb6d7969c9" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-cd34b0af0bfb6d7969c9">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6"],["Penguin","Penguin","Penguin","Flöp","Penguin","Flöp"],[10,8,2,10,22,11],["Flöffy","not Flöffy","not Flöffy","Flöffy","not Flöffy","Flöffy"]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>a<\/th>\n      <th>b<\/th>\n      <th>c<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":2},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"a","targets":1},{"name":"b","targets":2},{"name":"c","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
 </div>
 
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Titel</a>
-</th>
-<th>
-Untertitel
-</th>
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Autor:in</a>
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="unlisted" data-listing-date-sort="1706569200000" data-listing-file-modified-sort="1706089658040" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="How to flip the right way? Fail, flip, fix and feed in practice." data-listing-filename-sort="excl_literature_club.qmd">
-<td>
-<a href="./special/excl_literature_club.html" class="title listing-title">How to flip the right way? Fail, flip, fix and feed in practice.</a>
-</td>
-<td>
-<span class="listing-subtitle">Literature Club Besprechung</span>
-</td>
-<td>
-<span class="listing-author">Richard Conrardy</span>
-</td>
-</tr>
-<tr data-index="1" data-listing-date-sort="1707692400000" data-listing-file-modified-sort="1706300582833" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="Inhalte onlinebringen" data-listing-filename-sort="barcamp_phbern_2024.qmd">
-<td>
-<a href="./special/barcamp_phbern_2024.html" class="title listing-title">Inhalte onlinebringen</a>
-</td>
-<td>
-<span class="listing-subtitle">Barcamp PHBern</span>
-</td>
-<td>
-<span class="listing-author">Richard Conrardy</span>
-</td>
-</tr>
-<tr data-index="2" data-categories="Tagungsfolien" data-listing-date-sort="1705618800000" data-listing-file-modified-sort="1706090921019" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="Mathematikverständnis stärken in Zeiten von KI" data-listing-filename-sort="gdm_tagung.qmd">
-<td>
-<a href="./special/gdm_tagung.html" class="title listing-title">Mathematikverständnis stärken in Zeiten von KI</a>
-</td>
-<td>
-<span class="listing-subtitle">Workshop</span>
-</td>
-<td>
-<span class="listing-author">Richard Conrardy</span>
-</td>
-</tr>
-<tr data-index="3" data-listing-file-modified-sort="1706374504251" data-listing-filename-sort="barcamp_phbern_2024.html">
-<td>
-<span class="listing-title">undefined</span>
-</td>
-<td>
-<span class="listing-subtitle">undefined</span>
-</td>
-<td>
-<span class="listing-author">Richard Conrardy</span>
-</td>
-</tr>
-<tr data-index="4" data-listing-file-modified-sort="1706374518037" data-listing-filename-sort="excl_Spielwiese.html">
-<td>
-<span class="listing-title">undefined</span>
-</td>
-<td>
-<span class="listing-subtitle">undefined</span>
-</td>
-<td>
-<span class="listing-author">Richard Conrardy</span>
-</td>
-</tr>
-<tr data-index="5" data-listing-file-modified-sort="1706374502257" data-listing-filename-sort="excl_literature_club.html">
-<td>
-<span class="listing-title">undefined</span>
-</td>
-<td>
-<span class="listing-subtitle">undefined</span>
-</td>
-<td>
-<span class="listing-author">Richard Conrardy</span>
-</td>
-</tr>
-<tr data-index="6" data-listing-file-modified-sort="1706374538702" data-listing-filename-sort="gdm_tagung.html">
-<td>
-<span class="listing-title">undefined</span>
-</td>
-<td>
-<span class="listing-subtitle">undefined</span>
-</td>
-<td>
-<span class="listing-author">Richard Conrardy</span>
-</td>
-</tr>
-<tr data-index="7" data-listing-file-modified-sort="1706265340492" data-listing-filename-sort="sonja-test-js.html">
-<td>
-<span class="listing-title">undefined</span>
-</td>
-<td>
-<span class="listing-subtitle">undefined</span>
-</td>
-<td>
-<span class="listing-author">Richard Conrardy</span>
-</td>
-</tr>
-</tbody>
 
-</table>
-<div class="listing-no-matching d-none">
-Keine Treffer
-</div>
-</div><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Wiederverwendung</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">https://creativecommons.org/licenses/by-sa/4.0/deed.de</a></div></div></section></div></main> <!-- /main -->
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Wiederverwendung</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">https://creativecommons.org/licenses/by-sa/4.0/deed.de</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
