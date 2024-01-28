@@ -110,7 +110,6 @@ Sekundarklassen (quasi-experimentell): $p = 0.437$
   - transfer $p < 0.005$, $d = 0.67$
 
 
-
 ## Boundary conditions? 
 
 >there is evidence that element interactivity provides an explanatory variable for the presence or absence of a problem-solving first advantage.
