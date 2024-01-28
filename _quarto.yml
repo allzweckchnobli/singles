@@ -4,12 +4,14 @@ project:
 
   
 bibliography: bibliographie_richard.bib
-lang: de
+csl: apa7.csl
+
+
 
 website:
-  favicon: images/cat.png
+  favicon: images/fox.png
   navbar:
-    logo: "images/cat.png"
+    logo: "images/fox.png"
     background: white
 
   
@@ -55,7 +57,7 @@ format:
       data-background-position: 94% 99%
     fig-align: center
     scrollable: true
-    logo: images/penguin.png
+    logo: images/fox.png
     hide-inactive-cursor: true
     mermaid:
       theme: neutral
