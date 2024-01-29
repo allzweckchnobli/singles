@@ -108,7 +108,7 @@ createSketch((s) => {
   function meinKreisePinsel() {
     s.strokeWeight(1);
     s.fill(255 / s.sizeX * s.mouseX, 0, 255 / s.sizeY * (s.sizeY - s.mouseX));
-    s.circle(s.mouseX, s.mouseY, s.dist(s.mouseX, s.mouseY, s.pmouseX, s.pmouseY));
+    s.circle(s.mouseX+100, s.mouseY+50, s.dist(s.mouseX, s.mouseY, s.pmouseX, s.pmouseY));
   }
 })
 
