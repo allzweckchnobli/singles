@@ -13,14 +13,6 @@ date: 12 02 2024
 > Grady Booch?
 > :::
 
-<br>
-
-> let's fool around
->
-> ::: quelle
-> General Johnson
-> :::
-
 # Praxis
 
 ## RStudio {.smaller}
@@ -115,7 +107,7 @@ createSketch((s) => {
 ```
 :::
 
-## Mermaid JS - Richard Conrardy{.unlisted}
+## Flowchart - Richard Conrardy{.unlisted}
 
 ```{mermaid}
 %%| echo: true
@@ -178,6 +170,33 @@ classDef padding stroke:none,fill:none
 class main title
 class padding padding
   
+```
+
+## Gantt diagram
+
+```{mermaid}
+%%| echo: true
+%%| code-fold: true
+gantt
+    title Ablauf
+    dateFormat YYYY-MM-DD
+    section Vorbereitung
+    section Doktorarbeit
+        Exposé: e0, 2023-01-08, 240d
+        Promotionsvereinbarung: pv, 2023-07-01, 30d
+        Zulassung durch den Promotionsausschuss: zp, 2023-10-05, 5d
+        Probedurchlauf: pdl, 2024-03-01,14d
+        Experiment 1          :  e1, 2024-04-01, 60d
+        Experiment 2    : e2, 2025-02-01, 120d
+        Experiment 3: e3, 2025-08-01, 110d
+        2 Artikel : art2, 2026-02-01, 365d
+        3 Artikel : art3, 2027-02-01, 365d
+
+    section PHBern
+        Antrag Anschubfinanzierung: a0, 2023-02-01, 30d
+        Anschubfinanzierung: a1, 2024-08-01, 365d
+        Antrag Projekt: p0, 2025-01-01, 60d
+        Projekt: p1, 2026-08-01, 1100d  
 ```
 
 # ☕️ ?{.unlisted}

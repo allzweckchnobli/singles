@@ -11,7 +11,7 @@
     "href": "special/barcamp_phbern_2024.html#section",
     "title": "Inhalte effizient onlinebringen",
     "section": "",
-    "text": "a fool with a tool is still a fool\n\nGrady Booch?\n\n\n\n\nlet’s fool around\n\nGeneral Johnson"
+    "text": "a fool with a tool is still a fool\n\nGrady Booch?"
   },
   {
     "objectID": "special/barcamp_phbern_2024.html#rstudio",
@@ -439,5 +439,19 @@
     "title": "How to flip the right way? Fail, flip, fix and feed in practice.",
     "section": "Flipped Classroom - a brief history",
     "text": "Flipped Classroom - a brief history\n\nclassroom flip: Baker (2000)\ninverted classroom: Lage et al. (2000)\nUrsprung: Bergmann et al. (2011) und Tucker (2012)\nkein präzises Modell: Lo et al. (2017), Tucker (2012)\nMetastudie: Kapur et al. (2022)"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#flowchart---richard-conrardy",
+    "href": "special/barcamp_phbern_2024.html#flowchart---richard-conrardy",
+    "title": "Inhalte effizient onlinebringen",
+    "section": "Flowchart - Richard Conrardy",
+    "text": "Flowchart - Richard Conrardy\n\n\nCode\ngraph LR;\n  b1[Arithmetik];\n  b2[Stochastik];\n  b3[Geometrie];\n  i5[Zahl];\n  k1[Zahl und Variable];\n  b4[Algebra];\n  i1[Symbol und Formalisierung];\n  b5[Analysis];\n  i2[Zuordnung und Veränderung];\n  i3[Daten und Zufall];\n  i4[Form und Raum];\n  k2[Grössen, Funktionen, Daten und Zufall];\n  k3[Form und Raum];\n  edk1[Zahl und Variable];\n  edk2[Form und Raum];\n  edk3[Grösse und Masse];\n  edk4[Funktionale Zusammenhänge];\n  edk5[Daten und Zufall];\n  b1--&gt;i5---edk1--&gt;k1;\n  b4--&gt;i1---edk1;\n  b5--&gt;i2---edk4--&gt;k2;\n  b2--&gt;i3---edk5--&gt;k2;\n  b3--&gt;i4---edk2--&gt;k3;\n  edk3--&gt;k2;\n  subgraph Teilgebiete\n    b1;\n    b2;\n    b3;\n    b4;\n    b5;\n  end\n  subgraph B[Kompetenzbereiche EDK]\n    edk1;\n    edk2;\n    edk3;\n    edk4;\n    edk5;\n  end\n  subgraph Leitideen\n    i1;\n    i2;\n    i3;\n    i4;\n    i5;\n  end\n  subgraph K[Kompetenzbereiche LP21]\n    k1;\n    k2;\n    k3;\n  end\n  \nclassDef title font-size:14px\nclassDef padding stroke:none,fill:none\n\nclass main title\nclass padding padding\n\n\n\n\ngraph LR;\n  b1[Arithmetik];\n  b2[Stochastik];\n  b3[Geometrie];\n  i5[Zahl];\n  k1[Zahl und Variable];\n  b4[Algebra];\n  i1[Symbol und Formalisierung];\n  b5[Analysis];\n  i2[Zuordnung und Veränderung];\n  i3[Daten und Zufall];\n  i4[Form und Raum];\n  k2[Grössen, Funktionen, Daten und Zufall];\n  k3[Form und Raum];\n  edk1[Zahl und Variable];\n  edk2[Form und Raum];\n  edk3[Grösse und Masse];\n  edk4[Funktionale Zusammenhänge];\n  edk5[Daten und Zufall];\n  b1--&gt;i5---edk1--&gt;k1;\n  b4--&gt;i1---edk1;\n  b5--&gt;i2---edk4--&gt;k2;\n  b2--&gt;i3---edk5--&gt;k2;\n  b3--&gt;i4---edk2--&gt;k3;\n  edk3--&gt;k2;\n  subgraph Teilgebiete\n    b1;\n    b2;\n    b3;\n    b4;\n    b5;\n  end\n  subgraph B[Kompetenzbereiche EDK]\n    edk1;\n    edk2;\n    edk3;\n    edk4;\n    edk5;\n  end\n  subgraph Leitideen\n    i1;\n    i2;\n    i3;\n    i4;\n    i5;\n  end\n  subgraph K[Kompetenzbereiche LP21]\n    k1;\n    k2;\n    k3;\n  end\n  \nclassDef title font-size:14px\nclassDef padding stroke:none,fill:none\n\nclass main title\nclass padding padding"
+  },
+  {
+    "objectID": "special/barcamp_phbern_2024.html#gantt-diagram",
+    "href": "special/barcamp_phbern_2024.html#gantt-diagram",
+    "title": "Inhalte effizient onlinebringen",
+    "section": "Gantt diagram",
+    "text": "Gantt diagram\n\n\nCode\ngantt\n    title Ablauf\n    dateFormat YYYY-MM-DD\n    section Vorbereitung\n    section Doktorarbeit\n        Exposé: e0, 2023-01-08, 240d\n        Promotionsvereinbarung: pv, 2023-07-01, 30d\n        Zulassung durch den Promotionsausschuss: zp, 2023-10-05, 5d\n        Probedurchlauf: pdl, 2024-03-01,14d\n        Experiment 1          :  e1, 2024-04-01, 60d\n        Experiment 2    : e2, 2025-02-01, 120d\n        Experiment 3: e3, 2025-08-01, 110d\n        2 Artikel : art2, 2026-02-01, 365d\n        3 Artikel : art3, 2027-02-01, 365d\n\n    section PHBern\n        Antrag Anschubfinanzierung: a0, 2023-02-01, 30d\n        Anschubfinanzierung: a1, 2024-08-01, 365d\n        Antrag Projekt: p0, 2025-01-01, 60d\n        Projekt: p1, 2026-08-01, 1100d\n\n\n\n\ngantt\n    title Ablauf\n    dateFormat YYYY-MM-DD\n    section Vorbereitung\n    section Doktorarbeit\n        Exposé: e0, 2023-01-08, 240d\n        Promotionsvereinbarung: pv, 2023-07-01, 30d\n        Zulassung durch den Promotionsausschuss: zp, 2023-10-05, 5d\n        Probedurchlauf: pdl, 2024-03-01,14d\n        Experiment 1          :  e1, 2024-04-01, 60d\n        Experiment 2    : e2, 2025-02-01, 120d\n        Experiment 3: e3, 2025-08-01, 110d\n        2 Artikel : art2, 2026-02-01, 365d\n        3 Artikel : art3, 2027-02-01, 365d\n\n    section PHBern\n        Antrag Anschubfinanzierung: a0, 2023-02-01, 30d\n        Anschubfinanzierung: a1, 2024-08-01, 365d\n        Antrag Projekt: p0, 2025-01-01, 60d\n        Projekt: p1, 2026-08-01, 1100d"
   }
 ]
