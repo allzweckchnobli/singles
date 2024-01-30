@@ -1,6 +1,6 @@
 ---
 format: revealjs
-title: Inhalte onlinebringen
+title: Inhalte effizient onlinebringen
 subtitle: Barcamp PHBern
 date: 12 02 2024
 ---
