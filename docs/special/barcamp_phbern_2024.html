@@ -467,7 +467,8 @@
 <blockquote>
 <p>a fool with a tool is still a fool</p>
 <div class="quelle">
-<p>Grady Booch?</p>
+<p><del>Grady Booch?</del></p>
+<p>Ronald S. Weinstein gemäss <span class="citation" data-cites="thurlbeck_perestroika_1989">Thurlbeck (<a href="#/bibliographie" role="doc-biblioref" onclick="">1989</a>)</span></p>
 </div>
 </blockquote>
 </section>
@@ -514,7 +515,7 @@
 <span id="cb1-9"><a href="#cb1-9"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div class="countdown" id="timer_2bb49ba5" data-update-every="1" tabindex="0" style="top:0;right:0;margin:0%;font-size:1.5em;">
+<div class="countdown" id="timer_69fac44e" data-update-every="1" tabindex="0" style="top:0;right:0;margin:0%;font-size:1.5em;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -527,39 +528,39 @@
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2" data-startfrom="73" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 72;"><span id="cb2-73"><a href="#cb2-73"></a>P5 <span class="op">=</span> <span class="pp">require</span>(<span class="st">"p5"</span>)</span>
-<span id="cb2-74"><a href="#cb2-74"></a></span>
-<span id="cb2-75"><a href="#cb2-75"></a><span class="kw">function</span><span class="op">*</span> <span class="fu">createSketch</span>(sketch) {</span>
-<span id="cb2-76"><a href="#cb2-76"></a>  <span class="kw">const</span> element <span class="op">=</span> DOM<span class="op">.</span><span class="fu">element</span>(<span class="st">'div'</span>)<span class="op">;</span></span>
-<span id="cb2-77"><a href="#cb2-77"></a>  <span class="kw">yield</span> element<span class="op">;</span></span>
-<span id="cb2-78"><a href="#cb2-78"></a>  <span class="kw">const</span> instance <span class="op">=</span> <span class="kw">new</span> <span class="fu">P5</span>(sketch<span class="op">,</span> element<span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span></span>
-<span id="cb2-79"><a href="#cb2-79"></a>  <span class="cf">try</span> {</span>
-<span id="cb2-80"><a href="#cb2-80"></a>    <span class="cf">while</span> (<span class="kw">true</span>) {</span>
-<span id="cb2-81"><a href="#cb2-81"></a>      <span class="kw">yield</span> element<span class="op">;</span></span>
-<span id="cb2-82"><a href="#cb2-82"></a>    }</span>
-<span id="cb2-83"><a href="#cb2-83"></a>  } <span class="cf">finally</span> {</span>
-<span id="cb2-84"><a href="#cb2-84"></a>    instance<span class="op">.</span><span class="fu">remove</span>()<span class="op">;</span></span>
-<span id="cb2-85"><a href="#cb2-85"></a>  }</span>
-<span id="cb2-86"><a href="#cb2-86"></a>}</span>
-<span id="cb2-87"><a href="#cb2-87"></a></span>
-<span id="cb2-88"><a href="#cb2-88"></a><span class="fu">createSketch</span>((s) <span class="kw">=&gt;</span> {</span>
-<span id="cb2-89"><a href="#cb2-89"></a>    s<span class="op">.</span><span class="at">setup</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb2-90"><a href="#cb2-90"></a>    s<span class="op">.</span><span class="at">sizeX</span> <span class="op">=</span> <span class="dv">960</span><span class="op">;</span></span>
-<span id="cb2-91"><a href="#cb2-91"></a>    s<span class="op">.</span><span class="at">sizeY</span> <span class="op">=</span> <span class="dv">400</span><span class="op">;</span></span>
-<span id="cb2-92"><a href="#cb2-92"></a>    s<span class="op">.</span><span class="fu">createCanvas</span>(s<span class="op">.</span><span class="at">sizeX</span><span class="op">,</span> s<span class="op">.</span><span class="at">sizeY</span>)<span class="op">;</span></span>
-<span id="cb2-93"><a href="#cb2-93"></a>    s<span class="op">.</span><span class="fu">background</span>(<span class="dv">0</span>)<span class="op">;</span></span>
-<span id="cb2-94"><a href="#cb2-94"></a>  }<span class="op">;</span></span>
-<span id="cb2-95"><a href="#cb2-95"></a></span>
-<span id="cb2-96"><a href="#cb2-96"></a>  s<span class="op">.</span><span class="at">draw</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb2-97"><a href="#cb2-97"></a>    <span class="fu">meinKreisePinsel</span>()<span class="op">;</span></span>
-<span id="cb2-98"><a href="#cb2-98"></a>  }<span class="op">;</span></span>
-<span id="cb2-99"><a href="#cb2-99"></a></span>
-<span id="cb2-100"><a href="#cb2-100"></a>  <span class="kw">function</span> <span class="fu">meinKreisePinsel</span>() {</span>
-<span id="cb2-101"><a href="#cb2-101"></a>    s<span class="op">.</span><span class="fu">strokeWeight</span>(<span class="dv">1</span>)<span class="op">;</span></span>
-<span id="cb2-102"><a href="#cb2-102"></a>    s<span class="op">.</span><span class="fu">fill</span>(<span class="dv">255</span> <span class="op">/</span> s<span class="op">.</span><span class="at">sizeX</span> <span class="op">*</span> s<span class="op">.</span><span class="at">mouseX</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">255</span> <span class="op">/</span> s<span class="op">.</span><span class="at">sizeY</span> <span class="op">*</span> (s<span class="op">.</span><span class="at">sizeY</span> <span class="op">-</span> s<span class="op">.</span><span class="at">mouseX</span>))<span class="op">;</span></span>
-<span id="cb2-103"><a href="#cb2-103"></a>    s<span class="op">.</span><span class="fu">circle</span>(s<span class="op">.</span><span class="at">mouseX</span><span class="op">+</span><span class="dv">100</span><span class="op">,</span> s<span class="op">.</span><span class="at">mouseY</span><span class="op">+</span><span class="dv">50</span><span class="op">,</span> s<span class="op">.</span><span class="fu">dist</span>(s<span class="op">.</span><span class="at">mouseX</span><span class="op">,</span> s<span class="op">.</span><span class="at">mouseY</span><span class="op">,</span> s<span class="op">.</span><span class="at">pmouseX</span><span class="op">,</span> s<span class="op">.</span><span class="at">pmouseY</span>))<span class="op">;</span></span>
-<span id="cb2-104"><a href="#cb2-104"></a>  }</span>
-<span id="cb2-105"><a href="#cb2-105"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2" data-startfrom="75" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 74;"><span id="cb2-75"><a href="#cb2-75"></a>P5 <span class="op">=</span> <span class="pp">require</span>(<span class="st">"p5"</span>)</span>
+<span id="cb2-76"><a href="#cb2-76"></a></span>
+<span id="cb2-77"><a href="#cb2-77"></a><span class="kw">function</span><span class="op">*</span> <span class="fu">createSketch</span>(sketch) {</span>
+<span id="cb2-78"><a href="#cb2-78"></a>  <span class="kw">const</span> element <span class="op">=</span> DOM<span class="op">.</span><span class="fu">element</span>(<span class="st">'div'</span>)<span class="op">;</span></span>
+<span id="cb2-79"><a href="#cb2-79"></a>  <span class="kw">yield</span> element<span class="op">;</span></span>
+<span id="cb2-80"><a href="#cb2-80"></a>  <span class="kw">const</span> instance <span class="op">=</span> <span class="kw">new</span> <span class="fu">P5</span>(sketch<span class="op">,</span> element<span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span></span>
+<span id="cb2-81"><a href="#cb2-81"></a>  <span class="cf">try</span> {</span>
+<span id="cb2-82"><a href="#cb2-82"></a>    <span class="cf">while</span> (<span class="kw">true</span>) {</span>
+<span id="cb2-83"><a href="#cb2-83"></a>      <span class="kw">yield</span> element<span class="op">;</span></span>
+<span id="cb2-84"><a href="#cb2-84"></a>    }</span>
+<span id="cb2-85"><a href="#cb2-85"></a>  } <span class="cf">finally</span> {</span>
+<span id="cb2-86"><a href="#cb2-86"></a>    instance<span class="op">.</span><span class="fu">remove</span>()<span class="op">;</span></span>
+<span id="cb2-87"><a href="#cb2-87"></a>  }</span>
+<span id="cb2-88"><a href="#cb2-88"></a>}</span>
+<span id="cb2-89"><a href="#cb2-89"></a></span>
+<span id="cb2-90"><a href="#cb2-90"></a><span class="fu">createSketch</span>((s) <span class="kw">=&gt;</span> {</span>
+<span id="cb2-91"><a href="#cb2-91"></a>    s<span class="op">.</span><span class="at">setup</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-92"><a href="#cb2-92"></a>    s<span class="op">.</span><span class="at">sizeX</span> <span class="op">=</span> <span class="dv">960</span><span class="op">;</span></span>
+<span id="cb2-93"><a href="#cb2-93"></a>    s<span class="op">.</span><span class="at">sizeY</span> <span class="op">=</span> <span class="dv">400</span><span class="op">;</span></span>
+<span id="cb2-94"><a href="#cb2-94"></a>    s<span class="op">.</span><span class="fu">createCanvas</span>(s<span class="op">.</span><span class="at">sizeX</span><span class="op">,</span> s<span class="op">.</span><span class="at">sizeY</span>)<span class="op">;</span></span>
+<span id="cb2-95"><a href="#cb2-95"></a>    s<span class="op">.</span><span class="fu">background</span>(<span class="dv">0</span>)<span class="op">;</span></span>
+<span id="cb2-96"><a href="#cb2-96"></a>  }<span class="op">;</span></span>
+<span id="cb2-97"><a href="#cb2-97"></a></span>
+<span id="cb2-98"><a href="#cb2-98"></a>  s<span class="op">.</span><span class="at">draw</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-99"><a href="#cb2-99"></a>    <span class="fu">meinKreisePinsel</span>()<span class="op">;</span></span>
+<span id="cb2-100"><a href="#cb2-100"></a>  }<span class="op">;</span></span>
+<span id="cb2-101"><a href="#cb2-101"></a></span>
+<span id="cb2-102"><a href="#cb2-102"></a>  <span class="kw">function</span> <span class="fu">meinKreisePinsel</span>() {</span>
+<span id="cb2-103"><a href="#cb2-103"></a>    s<span class="op">.</span><span class="fu">strokeWeight</span>(<span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb2-104"><a href="#cb2-104"></a>    s<span class="op">.</span><span class="fu">fill</span>(<span class="dv">255</span> <span class="op">/</span> s<span class="op">.</span><span class="at">sizeX</span> <span class="op">*</span> s<span class="op">.</span><span class="at">mouseX</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">255</span> <span class="op">/</span> s<span class="op">.</span><span class="at">sizeY</span> <span class="op">*</span> (s<span class="op">.</span><span class="at">sizeY</span> <span class="op">-</span> s<span class="op">.</span><span class="at">mouseX</span>))<span class="op">;</span></span>
+<span id="cb2-105"><a href="#cb2-105"></a>    s<span class="op">.</span><span class="fu">circle</span>(s<span class="op">.</span><span class="at">mouseX</span><span class="op">+</span><span class="dv">100</span><span class="op">,</span> s<span class="op">.</span><span class="at">mouseY</span><span class="op">+</span><span class="dv">50</span><span class="op">,</span> s<span class="op">.</span><span class="fu">dist</span>(s<span class="op">.</span><span class="at">mouseX</span><span class="op">,</span> s<span class="op">.</span><span class="at">mouseY</span><span class="op">,</span> s<span class="op">.</span><span class="at">pmouseX</span><span class="op">,</span> s<span class="op">.</span><span class="at">pmouseY</span>))<span class="op">;</span></span>
+<span id="cb2-106"><a href="#cb2-106"></a>  }</span>
+<span id="cb2-107"><a href="#cb2-107"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -898,6 +899,9 @@ This text will jiggle!
 <div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
 <div id="ref-eidgenössischesinstitutfürgeistigeseigentum" class="csl-entry" role="listitem">
 Eidgenössisches Institut für Geistiges Eigentum. (n.d.). <em>Zitieren aus Werken - Eidgenössisches Institut für Geistiges Eigentum</em>. <a href="https://www.ige.ch/de/etwas-schuetzen/urheberrecht/ein-werk-nutzen/erlaubte-nutzungen/zitieren-aus-werken">https://www.ige.ch/de/etwas-schuetzen/urheberrecht/ein-werk-nutzen/erlaubte-nutzungen/zitieren-aus-werken</a>
+</div>
+<div id="ref-thurlbeck_perestroika_1989" class="csl-entry" role="listitem">
+Thurlbeck, W. M. (1989). Perestroika, fashion, and the universal glue. <em>American Review of Respiratory Disease</em>, <em>139</em>(5), 1280–1281. <a href="https://doi.org/10.1164/ajrccm/139.5.1280">https://doi.org/10.1164/ajrccm/139.5.1280</a>
 </div>
 </div>
 </section></section>

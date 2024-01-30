@@ -10,7 +10,9 @@ date: 12 02 2024
 > a fool with a tool is still a fool
 >
 > ::: quelle
-> Grady Booch?
+> ~~Grady Booch?~~
+>
+> Ronald S. Weinstein gemäss @thurlbeck_perestroika_1989
 > :::
 
 # Praxis
